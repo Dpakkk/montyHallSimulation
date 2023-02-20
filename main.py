@@ -1,14 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
-
-@app.route("/admin")
-def admin():
-    return "<h1>ADMIN</h1>"
-
-
+  
 @app.route("/")
 def home():
-    return "Hello from dssd!dshomepage!"
+    return render_template("index.html")
 
 if __name__ == '__main__':
     app.run()
+ 
