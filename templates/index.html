@@ -6,6 +6,9 @@
 
     <body>
         <h1> Home page!</h1>
-        <p>{{content1}}{{age}}</p>
+        <p>{% for i in content %}
+            <p> {{i}} </p>
+            {% endfor %}
+        </p>
     </body>
 </html>
